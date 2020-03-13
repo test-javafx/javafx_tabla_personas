@@ -15,7 +15,7 @@
       <TextField fx:id="txtApellido" layoutX="37.0" layoutY="184.0" />
       <Label layoutX="37.0" layoutY="250.0" text="Edad" />
       <TextField fx:id="txtEdad" layoutX="37.0" layoutY="276.0" prefHeight="26.0" prefWidth="76.0" />
-      <TableView fx:id="tblPersonas" layoutX="243.0" layoutY="69.0" prefHeight="356.0" prefWidth="417.0">
+      <TableView fx:id="tblPersonas" layoutX="243.0" layoutY="69.0" onMouseClicked="#seleccionar" prefHeight="291.0" prefWidth="417.0">
         <columns>
           <TableColumn fx:id="colNombre" prefWidth="131.0" text="Nombre" />
           <TableColumn fx:id="colApellido" prefWidth="155.0" text="Apellidos" />
@@ -23,5 +23,7 @@
         </columns>
       </TableView>
       <Button layoutX="39.0" layoutY="334.0" mnemonicParsing="false" onAction="#agregarPersona" prefHeight="26.0" prefWidth="162.0" text="Agregar Persona" />
+      <Button layoutX="243.0" layoutY="381.0" mnemonicParsing="false" onAction="#modificar" prefHeight="26.0" prefWidth="162.0" text="Modificar" />
+      <Button layoutX="498.0" layoutY="381.0" mnemonicParsing="false" onAction="#eliminar" prefHeight="26.0" prefWidth="162.0" text="Eliminar" />
    </children>
 </AnchorPane>
