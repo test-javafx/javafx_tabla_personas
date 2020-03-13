@@ -57,7 +57,13 @@ public class PersonaController {
         if(!this.personas.contains(p)){
             this.personas.add(p);
             this.tblPersonas.setItems(personas);
+
+            this.txtNombre.setText("");
+            this.txtApellido.setText("");
+            this.txtEdad.setText("");
+
         }else{
+            System.out.println(personas);
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.setHeaderText(null);
             alert.setTitle(null);
